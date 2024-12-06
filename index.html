@@ -2,14 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Hex Game Test</title>
   <style>
     body, html {
       margin: 0;
       padding: 0;
-      background: #333;
+      width: 100vw;
+      height: 100vh;
+      background: #000;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #game-container {
+      position: relative;
+      touch-action: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    canvas {
+      display: block;
+      touch-action: none;
     }
   </style>
 </head>
